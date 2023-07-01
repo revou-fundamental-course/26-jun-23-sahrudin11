@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:wght@400;500;700&family=Special+Elite&display=swap");
+
+:root {
+    --primary-color: #4fa509;
+    --secondary-color: #ffbf26;
+    --third-color: #f2ffe5;
+    --accent-color: white;
+    --border-radius: 4px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--third-color);
+}
+
+.container {
+  padding: 16px 86px;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+span.highlight-text{
+    color: var(--primary-color);
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: 400;
+    color: gray;
+}
+
+#hero {
+    padding: 68px 0;
+}
+
+nav {
+    background-color: var(--accent-color);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav a, footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: color ease-in-out 0.3s;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+#content .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#content {
+    padding: 48px 0;
+    background-color: var(--accent-color);
+}
+
+.img {
+    border-radius: var(--border-radius);
+}
+
+#content article {
+    max-width: 60%;
+}
+
+#review .review-img {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+#review .review-caption {
+    font-style: italic;
+    text-align: center;
+    color: gray;
+    padding: 16px 0;
+    margin: 16px 0;
+}
+
+#review .review-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+.review-profile span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--third-color);
+}
+
+.review-profile p {
+    color: gray;
+    font-style: italic;
+}
+
+#content aside {
+    max-width: 40%;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 24px 16px;
+    border-radius: var(--border-radius);
+    flex-basis: 40%;
+}
+
+#content aside h2 {
+    margin-bottom: 8px;
+}
+
+#content aside p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#content form {
+    margin-top: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input, textarea {
+    padding: 8px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    background-color: var(--third-color);
+}
+
+.btn {
+    padding: 16px 32px;
+    border: none;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 100%;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+}
+
+#uvp {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#uvp img {
+    mix-blend-mode: multiply;
+}
+
+#uvp .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#uvp .uvp-item {
+    background-color: var(--accent-color);
+    padding: 16px;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    color: gray;
+    margin: 16px 0;
+    max-width: 500px;
+    font-size: 14px;
+}
+
+.uvp-item span {
+    min-width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+#our-package {
+    background-color: var(--accent-color);
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#package-list {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}
+
+#package-list .package-item {
+    flex-basis: 30%;
+    flex-grow: 0;
+    display: flex;
+    gap: 18px;
+    padding: 18px 0;
+    border-radius: var(--border-radius);
+    transition: all .2s ease-in;
+    border-bottom: 1px solid transparent;
+}
+
+#package-list .package-item:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+#package-list .package-icon {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+#our-package .package-desc h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+#our-package p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: gray;
+}
+
+#call-us {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+#call-us .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#call-us p {
+    font-size: 14px;
+    color: gray;
+}
+
+#call-us .btn {
+    width: 20%;
+    margin-top: 24px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 32px; */
+}
+
+.footer-link {
+    color: var(--accent-color);
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.footer-link + span {
+    color: var(--accent-color);
+    font-size: 14px;
+}
+
+footer .brand {
+    color: var(--accent-color);
+}
+
+footer .highlight-text {
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 16px 18px;
+    }
+
+    #hero {
+        padding: 68px 18px;
+    }
+
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    #content .container {
+        flex-direction: column;
+    }
+
+    #content article {
+        max-width: 100%;
+    }
+
+    #content aside {
+        max-width: 100%;
+    }
+
+    #uvp .container {
+        flex-direction: column;
+    }
+
+    #uvp img {
+        display: none;
+    }
+
+    #call-us .btn {
+        width: initial;
+        min-width: 20%;
+    }
+
+    #package-list .package-item {
+        flex-basis: 50%;
+    }
+}
