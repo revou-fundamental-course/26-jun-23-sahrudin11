@@ -3,20 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenGrocery</title>
+    <title>GroceryU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
-
+            <div class="container">
+                <a href="#" class="brand">Grocery<span class="highlight-text">U.</span></a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#our-package">Our Package</a></li>
+                    <li><a href="#call-us">Call Us</a></li>
+                </ul>
+            </div>
         </nav>
+        <div id="hero" class="container">
+            <h1 class="title">Top Rated <span class="highlight-text">E-Groceries</span> Shop in Indonesia</h1>
+            <h3 class="subtitle">Every Day with Best Ingredients</h3>
+        </div>
     </header>
     <main>
-        
+        <section id="content">
+            <div class="container">
+                <article id="review">
+                    <div class="review-item">
+                        <div class="review-img">
+                            <img class="img" src="img/top-view-vegetables-fruits-bag.jpg" loading="lazy" alt="fruit basket" width="100%">
+                        </div>
+                        <div class="review-caption">
+                            <p>"Setiap hari beli sayur dan buah segar disini."</p>
+                        </div>
+                        <div class="review-profile">
+                            <span class="profile-pic"><i class="fa-regular fa-user"></i></span>
+                            <div class="profile-desc">
+                                <h3>Mary Jane</h3>
+                                <p>Ibu Rumah Tangga, 28</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <aside id="contact-us">
+                    <h2>Contact Us</h2>
+                    <p>Sales akan menghubungi Anda 1x24 jam setelah data kami terima</p>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="6"></textarea>
+                        </div>
+                        <button type="button" id="submit" class="btn btn-primary">SEND</button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+        <section id="uvp">
+            <div class="container">
+                <div class="uvp-list">
+                    <div class="uvp-item">
+                        <span>1</span>
+                        <p>Menyediakan berbagai sayur dan buah yang Anda butuhkan</p>
+                    </div>
+                    <div class="uvp-item">
+                        <span>2</span>
+                        <p>Dapat dipesan kapan saja dan dimana saja sesuka hati Anda</p>
+                    </div>
+                    <div class="uvp-item">
+                        <span>3</span>
+                        <p>Tunggu di rumah dan pesanan Anda akan segera datang</p>
+                    </div>
+                </div>
+                <div class="uvp-img">
+                    <img class="img" src="img/basket-full-vegetables.jpg" loading="lazy" alt="uvp images" width="100%" height="260px">
+                </div>
+            </div>
+        </section>
+        <section id="our-package">
+            <div class="container">
+                <h2 class="title">Our <span class="highlight-text">Package</span></h2>
+                <div id="package-list">
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <span><i class="fa-solid fa-leaf"></i></span>
+                        </div>
+                        <div class="package-desc">
+                            <h2>Fresh Vegetable</h2>
+                            <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <span><i class="fa-solid fa-apple-whole"></i></span>
+                        </div>
+                        <div class="package-desc">
+                            <h2>Fresh Fruit</h2>
+                            <p>Buah dengan kualitas terbaik dari lokal atau import dan harga yang menarik</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <span><i class="fa-solid fa-truck-fast"></i></span>
+                        </div>
+                        <div class="package-desc">
+                            <h2>Instant Delivery</h2>
+                            <p>Dikirim instan oleh kurir yang telah di-training dengan SOP untuk menjaga kondisi belanja kamu</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <span><i class="fa-solid fa-pepper-hot"></i></span>
+                        </div>
+                        <div class="package-desc">
+                            <h2>Kitchen Ingredient</h2>
+                            <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <span><i class="fa-solid fa-kitchen-set"></i></span>
+                        </div>
+                        <div class="package-desc">
+                            <h2>Kitchen Set</h2>
+                            <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <span><i class="fa-solid fa-box-open"></i></span>
+                        </div>
+                        <div class="package-desc">
+                            <h2>Bundling Set</h2>
+                            <p>Bingung mau masak apa ? Sudah tersedia paket untuk kamu masak di dapurmu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="call-us">
+            <div class="container">
+                <h2 class="title">Come Join Us <span class="highlight-text">Now</span></h2>
+                <p>You will get discount up to 20% and cashback up to Rp500.000 for Your first order in Our shop. <br>Be the lucky one.</p>
+                <button class="btn btn-primary">SHOPPING NOW !</button>
+            </div>
+        </section>
     </main>
     <footer>
-        
+        <div class="container">
+            <a href="#" class="brand">Grocery<span class="highlight-text">U.</span></a>
+            <div class="footer-link">
+                <a href="#">Term of Service</a>
+                &nbsp;
+                &nbsp;
+                <a href="#">Privacy Policy</a>
+            </div>
+            <span>&copy;2023</span>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
