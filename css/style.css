@@ -25,6 +25,8 @@ body {
 
 .container {
   padding: 16px 86px;
+  max-width: 1080px;
+  margin: auto;
 }
 
 .brand {
@@ -50,6 +52,11 @@ span.highlight-text{
 
 #hero {
     padding: 68px 0;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -224,7 +231,7 @@ input, textarea {
     gap: 12px;
     color: gray;
     margin: 16px 0;
-    max-width: 500px;
+    max-width: 448px;
     font-size: 14px;
 }
 
@@ -251,7 +258,7 @@ input, textarea {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 32px;
+    row-gap: 48px;
 }
 
 #package-list .package-item {
@@ -341,6 +348,7 @@ footer .highlight-text {
 @media only screen and (max-width: 600px) {
     .container {
         padding: 16px 18px;
+        max-width: 100%;
     }
 
     #hero {
@@ -371,6 +379,10 @@ footer .highlight-text {
 
     #uvp .container {
         flex-direction: column;
+    }
+
+    #uvp .uvp-item {
+        max-width: 100%;
     }
 
     #uvp img {
