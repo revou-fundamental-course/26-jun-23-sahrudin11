@@ -366,6 +366,7 @@ footer .highlight-text {
 
     #content .container {
         flex-direction: column;
+        gap: 48px;
     }
 
     #content article {
