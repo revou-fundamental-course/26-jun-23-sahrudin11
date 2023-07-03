@@ -267,7 +267,6 @@ input, textarea {
     display: flex;
     gap: 18px;
     padding: 18px 0;
-    border-radius: var(--border-radius);
     transition: all .2s ease-in;
     border-bottom: 1px solid transparent;
 }
