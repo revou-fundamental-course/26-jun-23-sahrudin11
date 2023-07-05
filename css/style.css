@@ -5,6 +5,8 @@
     --secondary-color: #ffbf26;
     --third-color: #f2ffe5;
     --accent-color: white;
+    --danger-color: rgb(236 187 187);
+    --danger-border: 1px solid rgb(242 55 55);
     --border-radius: 4px;
 }
 
@@ -230,6 +232,24 @@ input, textarea {
     outline: none;
     border-radius: var(--border-radius);
     background-color: var(--third-color);
+}
+
+input.error, textarea.error {
+    background-color: var(--danger-color);
+    border: var(--danger-border);
+}
+
+#success-notification {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 16px 32px;
+    border: 1px solid var(--primary-color);
+    transform: translateX(150%);
+    font-weight: 600;
 }
 
 .btn {

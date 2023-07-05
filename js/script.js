@@ -33,4 +33,40 @@ prevSlide.addEventListener("click", function () {
 
 setInterval(() => {
   slideShow("next");
-}, 3000);
+}, 4000);
+
+function validateForm(element) {
+  let errorCount = 0;
+  element.forEach((val, i) => {
+    if (document.querySelector(val).value === "") {
+      document.querySelector(val).classList.add("error");
+      errorCount++;
+    } else {
+      document.querySelector(val).classList.remove("error");
+    }
+  });
+
+  if (errorCount === 0) {
+    element.forEach((val, i) => {
+      document.querySelector(val).classList.remove("error");
+      document.querySelector(val).value = "";
+    });
+
+    document.querySelector("#success-notification").style.transition =
+      "all 0.5s";
+    document.querySelector(
+      "#success-notification"
+    ).style.transform = `translateX(0)`;
+
+    setTimeout(() => {
+      document.querySelector(
+        "#success-notification"
+      ).style.transform = `translateX(150%)`;
+    }, 3000);
+  }
+}
+
+const submitBtn = document.querySelector("#submit");
+submitBtn.addEventListener("click", () => {
+  validateForm(["#name", "#email", "#phone", "#message"]);
+});
